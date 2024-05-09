@@ -18,10 +18,3 @@ You can install the necessary Python packages using pip:
 
 ```bash
 pip install numpy opencv-python matplotlib
-
-## How It Works
-Load Classifier: The Haar Cascade haarcascade_frontalface_default.xml is loaded using OpenCV's CascadeClassifier.
-Image Processing: The image is read and converted to grayscale to simplify the detection process.
-Face Detection: OpenCV's detectMultiScale method is used to detect faces. Detected faces are returned as rectangles with coordinates.
-Mark Faces: Rectangles are drawn around detected faces on the original image.
-Display Results: The image with the detected faces is displayed using Matplotlib.
